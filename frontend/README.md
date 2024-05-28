@@ -2,7 +2,7 @@
 
 
 ![App Screenshot](https://i.ibb.co/dtzjPSh/vendre.png)
-|✨| [![MySQL badge](https://img.shields.io/badge/se%20Live-fff?style=for-the-badge&logo=&logoColor=white)](https://todo-jessica.netlify.app) |✨
+|✨| [![MySQL badge](https://img.shields.io/badge/se%20Live-fff?style=for-the-badge&logo=&logoColor=white)](https://vendre-jessica-h.netlify.app) |✨
 |---|---|---|
 
 ## Links 🔗 
