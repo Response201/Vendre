@@ -1,6 +1,4 @@
-<script setup>
-import Navbar from './components/Navbar.vue'
-</script>
+
 
 <template>
 <article class="layOut">
@@ -10,3 +8,6 @@ import Navbar from './components/Navbar.vue'
 </template>
 
 
+<script setup>
+import Navbar from './components/Navbar.vue'
+</script>
