@@ -1,0 +1,42 @@
+@use "variables" as v;
+@mixin devices($breakpoint) {
+  @if $breakpoint ==tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint ==desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
+@mixin button() {
+  width: fit-content;
+  min-width: 70px;
+  height: 90%;
+  max-height: 2rem;
+  font-size: clamp(15px, 1vw, 16px);
+  background-color: v.$secondary-color;
+  box-shadow: 2px 2px 1px v.$shadow;
+  border-radius: 20px;
+  color: white;
+  @content;
+  &:hover {
+    background-color: v.$secondary-hover;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(-3%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY-(5%);
+  }
+}

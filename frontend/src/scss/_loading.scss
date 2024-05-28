@@ -1,0 +1,70 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.loadingContainer {
+    height: 100vh;
+    min-height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &___content {
+        border-radius: 100px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+        width: calc(90vw - 4rem);
+        max-width: 450px;
+    }
+
+    .dotsAndText {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    &__text {
+        margin: 0;
+        font-size: clamp(70px, 10vw, 100px);
+        color: v.$secondary-color;
+        letter-spacing: .07rem;
+        color: rgb(0, 0, 0);
+        padding: 0;
+    }
+
+    .dots {
+        font-size: clamp(55px, 10vw, 70px);
+        color: v.$secondary-color;
+        font-family: "Basic", sans-serif;
+        font-weight: 700;
+        letter-spacing: .07rem;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: end;
+        justify-content: end;
+    }
+
+    .dot1 {
+        margin: 0;
+        animation: rotate 1.5s linear infinite;
+        animation-delay: 0s;
+    }
+
+    .dot2 {
+        margin: 0;
+        animation: rotate 1.5s linear infinite;
+        animation-delay: 0.2s;
+    }
+
+    .dot3 {
+        margin: 0;
+        animation: rotate 1.5s linear infinite;
+        animation-delay: 0.4s;
+    }
+}

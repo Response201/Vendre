@@ -1,0 +1,13 @@
+.userContainer {
+    width: 100vw;
+    height: 95%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .cardContainer___cardItems {
+        width: 90vw;
+        min-width: clamp(20px, 90vw, 500px);
+    }
+}
