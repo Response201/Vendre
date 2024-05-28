@@ -31,7 +31,7 @@ const fetchUser = async () => {
   const userId = parseInt(route.params.id);
   const page = parseInt(route.params.page);
   try {
-      const response = await axios.get('https://reqres.in/api/users', {
+      const response = await axios.get(import.meta.env.VITE_BASE_URL, {
         params: {
           page: page,
           per_page: 6,

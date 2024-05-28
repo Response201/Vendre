@@ -37,7 +37,7 @@ const fetchUsers = async (newPage) => {
 
 	loading.value = true;
 	try {
-		const response = await axios.get(`https://reqres.in/api/users`, {
+		const response = await axios.get(import.meta.env.VITE_BASE_URL, {
 			params: {
 				page: newPage,
 				per_page: perPage.value,
